@@ -1,0 +1,60 @@
+Job Papers Optimize Project License
+
+Copyright (c) 2026 houarnu166
+
+Project-authored textual harness materials, skills, templates,
+documentation, and synthetic examples are licensed under the Creative
+Commons Attribution-NonCommercial-ShareAlike 4.0 International license
+(CC BY-NC-SA 4.0).
+
+License deed:
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Full legal code:
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en
+
+Attribution
+
+When sharing the licensed material or adaptations, identify the work as
+"Job Papers Optimize", retain this license notice, indicate changes, and
+include the original project URL when one was supplied with your copy.
+
+Additional Permission for Personal Job Seeking
+
+In addition to the permissions granted by CC BY-NC-SA 4.0, the licensor
+permits an individual to use the licensed material to prepare and manage
+that individual's own resumes, portfolios, cover letters, job
+applications, interviews, and career materials.
+
+Personalized materials created for that individual's own job search may
+be submitted to prospective employers. Receiving salary, wages, or other
+compensation from a position obtained through that job search does not by
+itself make this permitted use a commercial use of the licensed material.
+
+This additional permission does not permit selling, licensing, renting,
+or charging for the project or access to it; using it to provide paid
+services to third parties; or incorporating it into a commercial product,
+service, platform, consulting practice, coaching service, recruitment
+service, training program, or revenue-generating workflow.
+
+Any commercial use requires separate written permission from the
+licensor.
+
+User Materials and Personalized Outputs
+
+This project license does not claim ownership of user-provided resumes,
+portfolios, career records, personal data, or other source materials.
+Personalized outputs created from those materials may be used by that
+user for the personal job-seeking purposes described above.
+
+Excluded Material
+
+Third-party material is excluded from this project license and remains
+subject to its own license terms. See `THIRD_PARTY_NOTICES.md` and any
+license file stored with that material. In particular,
+`skills/pdf/SKILL.md` and `skills/pdf/LICENSE.txt` are distributed under
+the Apache License 2.0 described in `THIRD_PARTY_NOTICES.md`.
+
+Executable software added to this project in the future must carry a
+separate software license. CC BY-NC-SA 4.0 applies to executable software
+only when that software is explicitly marked as covered by this license.

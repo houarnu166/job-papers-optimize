@@ -1,0 +1,17 @@
+{
+  "projects": [
+    {
+      "id": "project-operations-console",
+      "title": "B2B 운영 콘솔 개편",
+      "role": "UX 구조 설계와 UI 디자인",
+      "process": ["사용자 인터뷰", "로그 분석", "정보 구조 재설계"],
+      "outcome": "내부 사용자 피드백에서 작업 흐름이 명확해졌다는 평가를 받음"
+    },
+    {
+      "id": "project-design-system",
+      "title": "디자인 시스템 도입",
+      "role": "패턴 분류, 컴포넌트 기준 수립, 개발 협업",
+      "outcome": "신규 화면에서 공통 컴포넌트 사용이 정착됨"
+    }
+  ]
+}
