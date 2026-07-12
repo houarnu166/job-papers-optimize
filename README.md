@@ -5,7 +5,7 @@
 ## 만든 사람
 
 - Email: [houarnu166@gmail.com](mailto:houarnu166@gmail.com)
-- GitHub: [houarnu166](https://github.com/houarnu166)
+- GitHub: [houarnu166/job-papers-optimize](https://github.com/houarnu166/job-papers-optimize)
 
 ## 시작하기
 
@@ -13,7 +13,7 @@
 
 1. 내려받은 압축을 풀고 `job_papers_optimize` 폴더를 찾는다.
 2. Claude Code, Codex 또는 Antigravity에서 **폴더 열기**, **프로젝트 열기**, **워크스페이스 열기**에 해당하는 메뉴를 선택한다.
-3. `AGENTS.md`, `inputs`, `orders`, `outputs`, `skills`가 바로 보이는 `job_papers_optimize` 폴더를 연다. 그 상위 폴더나 legacy 폴더를 선택하지 않는다.
+3. `AGENTS.md`, `inputs`, `orders`, `outputs`, `skills`가 바로 보이는 `job_papers_optimize` 폴더를 연다.
 4. 해당 폴더에서 새 대화나 작업을 시작하고 아래처럼 말한다.
 
 > 이 폴더의 AGENTS.md와 로컬 skills를 먼저 읽고 따라줘. 처음 사용하는 환경이니 내 지원자 프로필부터 만들어줘.
@@ -70,10 +70,4 @@
 
 상업적 이용에는 권리자의 별도 서면 허가가 필요하다. 프로젝트가 직접 작성한 하네스 문서, 스킬, 템플릿과 익명 예시에는 `CC BY-NC-SA 4.0`과 개인 구직 목적의 추가 허가가 적용된다. 수정본을 공유할 때는 출처와 변경 여부를 표시하고 같은 라이선스를 유지해야 한다.
 
-사용자가 제공한 이력서, 포트폴리오, 경력 정보와 개인정보에 프로젝트가 권리를 주장하지 않는다. 개인 맞춤 산출물은 자신의 구직 목적으로 사용할 수 있다. 제3자 자료에는 각 자료의 별도 라이선스가 적용되며 자세한 내용은 `LICENSE`와 `THIRD_PARTY_NOTICES.md`를 확인한다.
-
-향후 실행 코드가 추가되면 해당 코드에는 별도의 소프트웨어 라이선스를 적용한다.
-
-상업적 이용을 제한하므로 이 프로젝트는 OSI 기준의 오픈소스 소프트웨어가 아니라 비영리 용도로 공개된 프로젝트다.
-
-자세한 운영 규칙은 `AGENTS.md`를 따른다.
+사용자가 제공한 이력서, 포트폴리오, 경력 정보와 개인정보에 프로젝트가 권리를 주장하지 않는다. 개인 맞춤 산출물은 자신의 구직 목적으로 사용할 수 있다.
