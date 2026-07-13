@@ -51,7 +51,13 @@ deliverables:
 constraints:
   tone: professional-natural
   length: source-compatible
-  structural_changes: require-user-approval
+  optimization:
+    wording: allowed
+    emphasis: allowed
+    reorder_within_section: allowed
+    resequence_repeated_units: allowed
+    structural_redesign: require-user-approval
+    add_or_remove_content_blocks: require-user-approval
   must_include:
     - B2B product design
     - developer collaboration

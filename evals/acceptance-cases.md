@@ -17,11 +17,11 @@
 3. material inventory와 source structure가 final draft보다 먼저 생성된다.
 4. company research는 research plan과 고정 1~9장 보고서를 만든다.
 5. research plan은 8개 조사 분야를 순서대로 모두 방문하고 각 상태를 기록한다.
-6. resume analysis와 portfolio plan이 생성된다.
-7. final resume는 원본 Markdown 구조, final portfolio는 원본 JSON 구조의 읽기 순서를 유지한다.
+6. requirement-evidence matrix, company-signal evidence matrix, matching strategy, resume analysis와 portfolio plan이 final draft보다 먼저 생성된다.
+7. final resume와 portfolio는 원본 형식 골격과 모든 기존 내용을 유지하되, 회사 신호와 지원자 근거가 매핑된 글머리표·경력·프로젝트 반복 단위는 전략에 따라 순서를 바꿀 수 있다.
 8. full interview는 실무 12개, 임원·문화 12개 이상과 질문별 8개 필드를 갖는다.
 9. final submission documents에 evidence ID가 없다.
-10. quality review가 source block 수와 deviation을 직접 비교한다.
+10. quality review가 source block 수, 전략적 재배치, 무단 구조 변경과 signal/evidence 추적성을 직접 비교한다.
 
 ## Case 2: Missing Original Document
 
@@ -93,7 +93,7 @@
 
 1. 페이지 수, 페이지별 block order, 이미지와 캡션을 source structure에 기록한다.
 2. 추출 가능한 이미지는 asset inventory와 source block에 연결한다.
-3. final Markdown은 페이지와 케이스 순서를 바꾸지 않는다.
+3. final Markdown은 각 케이스 내부의 페이지·이미지·캡션 순서를 유지한다. 회사 신호와 지원자 근거가 매핑된 경우 완전한 케이스 단위의 우선순위만 바꿀 수 있다.
 4. 이미지 누락이나 텍스트-only 대체는 Major다.
 5. PDF output은 생성하지 않는다.
 
@@ -109,6 +109,36 @@
 - Gate 0, Gate 2와 research quality review만 실행한다.
 - application 문서를 억지로 만들지 않는다.
 - research plan, posting snapshot, source ledger와 fixed report는 생략하지 않는다.
+
+## Case 8: Evidence-Backed Presentation Change
+
+입력:
+
+- source-locked resume와 portfolio
+- 공고에서 높은 우선순위로 확인된 B2B 복잡성 해결과 개발 협업 신호
+- 두 신호를 뒷받침하는 verified candidate evidence
+
+반드시 관찰할 결과:
+
+1. company-signal evidence matrix와 matching strategy가 final draft보다 먼저 생성된다.
+2. 관련 경력의 기존 글머리표와 완전한 프로젝트 단위를 앞쪽으로 재배치할 수 있다.
+3. 표현과 분량 배분은 바뀔 수 있지만 새로운 역할, 성과, 수치 또는 도구는 추가되지 않는다.
+4. 프로젝트 내부 이미지·캡션 순서와 원본 형식 골격은 유지된다.
+5. 각 실질적 변경은 company signal ID와 evidence ID를 change log에 기록한다.
+6. 이 조건을 만족한 전략적 재배치는 quality review에서 source deviation으로 실패하지 않는다.
+
+## Case 9: Arbitrary Presentation Change Regression
+
+입력 조건:
+
+- 회사 신호나 지원자 근거 매핑 없이 프로젝트와 글머리표 순서를 임의 변경
+- 분위기에 대한 출처 없는 추측을 사실처럼 사용
+
+기대 판정:
+
+- 근거 없는 어휘·강조·재배치는 Major다.
+- 출처 없는 회사 분위기는 `unconfirmed`로 돌리고 최종 문구와 최적화 근거에서 제거한다.
+- 최상위 섹션 이동이나 블록 추가·삭제가 승인 없이 적용됐다면 Major 이상이다.
 
 ## Completion Rule
 

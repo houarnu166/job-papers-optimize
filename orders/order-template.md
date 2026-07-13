@@ -38,7 +38,13 @@ deliverables:
 constraints:
   tone: professional-natural
   length: source-compatible
-  structural_changes: require-user-approval
+  optimization:
+    wording: allowed
+    emphasis: allowed
+    reorder_within_section: allowed
+    resequence_repeated_units: allowed
+    structural_redesign: require-user-approval
+    add_or_remove_content_blocks: require-user-approval
   must_include: []
   must_avoid: []
   submission_rules: ""
@@ -48,4 +54,4 @@ constraints:
 
 이 파일은 에이전트가 자연어 대화에서 내부 주문을 생성할 때 사용하는 템플릿이다. 사용자에게 복사하거나 직접 편집하도록 요구하지 않는다.
 
-기존 문서 개선은 `operation: tailor`와 실제 `source_id`를 사용한다. 새 문서 작성은 사용자가 명시했을 때만 `operation: create`, `preservation: not-applicable`로 둔다. PDF는 입력 자료로만 지정할 수 있고 deliverable 형식으로 사용할 수 없다.
+기존 문서 개선은 `operation: tailor`와 실제 `source_id`를 사용한다. 기본 최적화는 원본 형식 안에서 어휘, 강조, 같은 섹션의 글머리표와 기존 반복 단위 순서를 전략적으로 바꿀 수 있다. 섹션·내용 블록의 추가·삭제나 구조 재설계는 사용자 승인을 받는다. 새 문서 작성은 사용자가 명시했을 때만 `operation: create`, `preservation: not-applicable`로 둔다. PDF는 입력 자료로만 지정할 수 있고 deliverable 형식으로 사용할 수 없다.

@@ -32,6 +32,12 @@ description: Start a company or role application from natural-language conversat
 - `preservation: source-locked`
 - `language: ko`
 - `tone: professional-natural`
+- `constraints.optimization.wording: allowed`
+- `constraints.optimization.emphasis: allowed`
+- `constraints.optimization.reorder_within_section: allowed`
+- `constraints.optimization.resequence_repeated_units: allowed`
+- `constraints.optimization.structural_redesign: require-user-approval`
+- `constraints.optimization.add_or_remove_content_blocks: require-user-approval`
 - `interview.scope: full` when interview preparation is requested without a narrower scope
 
 ## Material Binding

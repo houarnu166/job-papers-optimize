@@ -1,6 +1,6 @@
 ---
 name: application-optimization
-description: Tailor resumes, cover letters, portfolios, and application strategy to a target role while binding every tailored output to its actual source document and preserving that source's structure. Use for capability assessment, requirement matching, source diagnosis, block-level rewrite planning, Markdown application drafts, asset preservation, and change tracking.
+description: Tailor resumes, cover letters, portfolios, and application strategy by mapping source-backed role, talent, culture, work-style, and product signals to verified candidate evidence, then changing wording, emphasis, and permitted content sequencing while preserving the source format. Use for capability assessment, company-signal matching, presentation planning, source diagnosis, Markdown application drafts, asset preservation, and change tracking.
 ---
 
 # Application Optimization
@@ -35,28 +35,32 @@ description: Tailor resumes, cover letters, portfolios, and application strategy
 - 고용주, 프로젝트, 도구, 수치, 수상, 도메인 경험을 만들지 않는다.
 - 기존 후보자의 방향, 말투, 문장 밀도와 자기 정체성을 유지하고 강조점만 조정한다.
 - 회사가 원하는 인재상을 그대로 따라 말하지 말고 후보자의 실제 경험이 자연스럽게 맞닿는 지점을 보여준다.
+- 조직 분위기와 문화는 공식 자료, 채용공고, 구성원 인터뷰 등 출처가 있는 신호만 사용한다. 여러 신호를 종합한 판단은 `source-based interpretation`으로 표시하고 사실처럼 단정하지 않는다.
+- 최종 문서에서 바꾸는 핵심은 새로운 경력을 만드는 것이 아니라 어떤 사실을 먼저 보여주고, 어떤 어휘로 설명하고, 어느 부분에 더 많은 주의를 배분할지 설계하는 일이다.
 
 ## Gated Workflow
 
 1. **Capability assessment**: 고정 목차의 `capability-assessment.md`를 작성한다.
 2. **Requirement mapping**: 공고의 주요 요구사항을 빠짐없이 `requirement-evidence-matrix.md`에 매핑한다.
-3. **Matching strategy**: 포지셔닝, 메시지 우선순위, 키워드, 간격 대응, 문서별 적용 계획을 `matching-strategy.md`에 작성한다.
-4. **Source diagnosis**: 요청 문서마다 원본 구조, 강점·약점, ATS/가독성, 보존·변경 계획을 분석한다.
-5. **Block plan**: 원본 블록마다 `keep`, `rewrite`, `reorder-requested`, `remove-requested`, `add-requested` 중 하나를 지정하고 근거 ID와 이유를 기록한다.
-6. **Draft**: 원본 블록 순서와 형식을 따라 요청된 Markdown 최종본을 작성한다. 일반적인 새 이력서·포트폴리오 템플릿으로 바꾸지 않는다.
-7. **Structural diff**: source block과 output block을 1:1로 대조하고 모든 차이를 `change-log.md`에 기록한다.
-8. **Submission package**: 최종 제출 파일, 선택 export, 보류 항목과 제출 전 확인사항을 `submission-package.md`에 정리한다.
+3. **Company-signal mapping**: 직무 책임, 필수·우대 요건, 인재상, 문화·업무 방식, 제품·사용자 맥락을 `company-signal-evidence-matrix.md`에서 지원자의 검증된 강점과 연결한다. 확인되지 않은 신호는 최적화 근거로 사용하지 않는다.
+4. **Matching strategy**: 포지셔닝, 메시지 우선순위, 키워드, 강조·축소 대상, 내용 순서, 간격 대응과 문서별 적용 계획을 `matching-strategy.md`에 작성한다.
+5. **Source diagnosis**: 요청 문서마다 원본 형식, 강점·약점, ATS/가독성, 현재와 제안 우선순위, 보존·변경 계획을 분석한다.
+6. **Presentation plan**: 원본 블록마다 `keep`, `rewrite`, `emphasize`, `deemphasize`, `reorder-within-section`, `resequence-unit`, `structure-change-requested` 중 하나를 지정하고 회사 신호 ID, 지원자 근거 ID와 이유를 기록한다.
+7. **Draft**: 원본 형식 골격 안에서 전략에 따라 어휘, 강조, 분량과 허용된 내용 순서를 조정해 요청된 Markdown 최종본을 작성한다. 일반적인 새 이력서·포트폴리오 템플릿으로 바꾸지 않는다.
+8. **Structural diff**: source block과 output block을 대조하고 모든 실질적 변경을 `change-log.md`에 기록한다. 전략적으로 재배치한 단위와 승인 필요한 구조 변경을 구분한다.
+9. **Submission package**: 최종 제출 파일, 선택 export, 보류 항목과 제출 전 확인사항을 `submission-package.md`에 정리한다.
 
 Gate 3이 통과하기 전 최종 문구를 확정하지 않고, Gate 4의 structural diff가 끝나기 전 문서 작성을 완료 처리하지 않는다.
 
 ## Source Preservation
 
-- 기본 `source-locked`에서는 제목 위계, 섹션 순서, 블록 경계, 문단 수, 목록·표 구조, 이미지 순서와 캡션을 유지한다.
+- 기본 `source-locked`에서는 제목 위계, 섹션 종류, 블록 템플릿, 문단 경계, 목록·표 구조, 이미지와 프로젝트의 연결, 캡션을 유지한다.
 - 문장 길이는 원래 블록과 레이아웃에 들어갈 수 있는 범위를 우선한다. 크게 늘어나는 경우 `change-log.md`에서 overflow 위험을 표시한다.
 - 원본에 존재하는 모든 섹션을 결과물에 대응시킨다. 빈번하지 않거나 직무 관련성이 낮다는 이유만으로 삭제하지 않는다.
-- 재배치나 삭제가 전략적으로 유리해도 사용자 승인이나 주문의 명시적 허용이 없으면 계획 문서에서 제안만 하고 최종본에는 적용하지 않는다.
-- 포트폴리오 이미지는 원본 순서, 프로젝트 연결, 캡션과 비율을 유지한다. 이미지 없이 텍스트 케이스 스터디로 대체하지 않는다.
-- JSON은 키·중첩·배열 구조를, HTML은 의미 구조와 자산 연결을 유지한다.
+- 같은 섹션의 글머리표와 기존 경력·프로젝트 같은 반복 단위는 매칭 전략이 뒷받침할 때 완전한 단위로 재배치할 수 있다. 재배치는 회사 신호 ID와 지원자 근거 ID를 남기며, 관련성이 낮다는 이유만으로 내용을 삭제하지 않는다.
+- 최상위 섹션 재배치, 서로 다른 부모 간 블록 이동, 삭제·추가·병합·분할은 사용자 승인이나 주문의 명시적 허용이 없으면 계획 문서에서 제안만 하고 최종본에는 적용하지 않는다.
+- 포트폴리오 이미지는 프로젝트 연결, 프로젝트 안의 순서, 캡션과 비율을 유지한다. 프로젝트 단위가 이동하면 연결된 이미지·캡션도 함께 이동한다. 이미지 없이 텍스트 케이스 스터디로 대체하지 않는다.
+- JSON은 키·중첩·배열 항목 구조를, HTML은 의미 구조와 자산 연결을 유지한다. 표시 목적의 반복 단위 순서만 전략에 따라 바꿀 수 있다.
 
 ## Final Copy Rules
 
@@ -70,6 +74,7 @@ Gate 3이 통과하기 전 최종 문구를 확정하지 않고, Gate 4의 struc
 
 - 요청 문서별 분석·계획과 최종본이 존재한다.
 - 모든 `tailor` 최종본이 source structure에 대응한다.
-- 변경 이력에 source block, output block, 변경 유형, 이유, evidence ID, 승인 상태가 있다.
+- 변경 이력에 source block, output block, 변경 유형, 이유, company signal ID, evidence ID, 승인 상태가 있다.
+- 모든 실질적 어휘·강조·순서 변경이 matching strategy와 매핑되고 임의 재배치가 없다.
 - 내부 표식이 최종 제출 문서에 없다.
 - 필수 사실과 수치가 verified evidence에 연결된다.

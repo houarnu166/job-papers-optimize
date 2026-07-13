@@ -41,7 +41,13 @@ deliverables:
 constraints:
   tone: conversational
   length: complete
-  structural_changes: not-applicable
+  optimization:
+    wording: not-applicable
+    emphasis: not-applicable
+    reorder_within_section: not-applicable
+    resequence_repeated_units: not-applicable
+    structural_redesign: not-applicable
+    add_or_remove_content_blocks: not-applicable
   must_include:
     - design system adoption
     - developer collaboration
