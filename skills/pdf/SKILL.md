@@ -28,9 +28,9 @@ input-only, runtime-native document handling. See `LICENSE.txt`.
 ## Workflow
 
 1. PDF 종류를 digital text, scanned image, OCR text layer 중 하나로 판별한다.
-2. 텍스트와 페이지 수를 추출하고 Markdown에 `<!-- source-page: N -->` 표식을 남긴다.
+2. 텍스트, 페이지 수와 페이지별 읽기 순서를 추출하고 `intake/source-structure.md`에 페이지·블록 대응을 남긴다.
 3. 레이아웃이 중요하거나 읽기 순서가 불명확한 페이지만 렌더링해 확인한다.
-4. 런타임이 지원하면 포트폴리오 이미지와 재사용 가능한 자산을 추출하고 `assets/asset-inventory.md`에 원본 페이지, 크기와 용도를 기록한다.
+4. 런타임이 지원하면 포트폴리오 이미지와 재사용 가능한 자산을 추출하고 `assets/asset-inventory.md`에 원본 페이지, source block, 크기·비율, 캡션과 용도를 기록한다.
 5. 텍스트 추출만으로 표, 열, 캡션 또는 이미지 위치를 추정하지 않는다.
 6. 암호화, 손상, OCR 불가 또는 권한 문제는 `worklog.md`에 기록하고 필요한 대체 자료를 요청한다.
 
@@ -40,4 +40,4 @@ input-only, runtime-native document handling. See `LICENSE.txt`.
 - Reusable images: `outputs/{output_slug}/assets/`
 - Final optimized content: Markdown created by `application-optimization`
 
-중간 페이지 렌더는 최종 제출물이 아니다. PDF 파일을 `exports/`에 작성하지 않는다.
+중간 페이지 렌더와 source-page 표식은 최종 제출물이 아니다. 최종 이력서·자기소개서·포트폴리오에 내부 페이지 표식을 노출하지 않고 PDF 파일을 `exports/`에 작성하지 않는다.

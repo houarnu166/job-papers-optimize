@@ -17,7 +17,8 @@ Do not install or require office suites, converters, programming runtimes, packa
 ## Reading
 
 - Extract main text, headings, paragraphs, lists, tables, headers, footers, image relationships and `word/media/` assets.
-- Preserve source order and record unsupported OOXML features.
+- Preserve source order, assign source block IDs and record the result in `intake/source-structure.md`.
+- Record embedded media in `assets/asset-inventory.md` with its relationship to the source block.
 - Reading XML gives structure, not trustworthy page geometry. If layout fidelity is important, prefer a companion PDF or runtime preview as the layout authority.
 - If the DOCX cannot be read, ask for PDF or HTML when layout matters, or Markdown/TXT when content is sufficient.
 
@@ -25,6 +26,7 @@ Do not install or require office suites, converters, programming runtimes, packa
 
 - Create DOCX only when the order requests `format: docx`.
 - Use approved Markdown as the sole content source.
+- Use `intake/source-structure.md` as the layout and structure constraint; Markdown content approval does not authorize a new template.
 - Set page size and margins explicitly and use real headings, lists, tables, headers and footers.
 - Keep image aspect ratios and embed reused images.
 - Store final DOCX under `outputs/{output_slug}/exports/`.
@@ -32,4 +34,4 @@ Do not install or require office suites, converters, programming runtimes, packa
 
 ## QA
 
-When DOCX was created, perform every structural check the runtime supports: readable content, expected tables and images, stable section order and no hidden placeholders. If an existing preview is available, inspect pages for clipping, overlap, missing glyphs, broken tables and page breaks. If preview is unavailable, record `DOCX visual QA: not performed` in `export-notes.md` and `quality-review.md`. Never claim QA that was not performed.
+When DOCX was created, perform every structural check the runtime supports: readable content, source block count, expected tables and images, stable section order and no hidden placeholders. If an existing preview is available, inspect pages for clipping, overlap, missing glyphs, distorted images, broken tables and page breaks. If preview is unavailable, record `DOCX visual QA: not performed` in `export-notes.md` and `quality-review.md`. Never claim QA that was not performed.
