@@ -16,11 +16,12 @@
 2. resume와 portfolio에 서로 다른 source ID가 연결된다.
 3. material inventory와 source structure가 final draft보다 먼저 생성된다.
 4. company research는 research plan과 고정 1~9장 보고서를 만든다.
-5. resume analysis와 portfolio plan이 생성된다.
-6. final resume는 원본 Markdown 구조, final portfolio는 원본 JSON 구조의 읽기 순서를 유지한다.
-7. full interview는 실무 12개, 임원·문화 12개 이상과 질문별 8개 필드를 갖는다.
-8. final submission documents에 evidence ID가 없다.
-9. quality review가 source block 수와 deviation을 직접 비교한다.
+5. research plan은 8개 조사 분야를 순서대로 모두 방문하고 각 상태를 기록한다.
+6. resume analysis와 portfolio plan이 생성된다.
+7. final resume는 원본 Markdown 구조, final portfolio는 원본 JSON 구조의 읽기 순서를 유지한다.
+8. full interview는 실무 12개, 임원·문화 12개 이상과 질문별 8개 필드를 갖는다.
+9. final submission documents에 evidence ID가 없다.
+10. quality review가 source block 수와 deviation을 직접 비교한다.
 
 ## Case 2: Missing Original Document
 

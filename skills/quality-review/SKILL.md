@@ -36,7 +36,7 @@ description: Independently review company-specific research, application, interv
 - **Source binding**: 모든 `tailor` deliverable에 실제 source ID가 있고 source가 읽힌다.
 - **Source fidelity**: 제목 위계, 섹션·블록 순서, 문단 경계, 목록, 표, 이미지, 캡션이 preservation 규칙과 일치한다.
 - **Unauthorized changes**: 삭제, 추가, 병합, 분할, 재배치가 change log의 이유와 승인 상태 없이 적용되지 않았다.
-- **Research contract**: research plan, posting snapshot, source ledger와 고정 보고서 목차가 있고 사실·해석·미확인이 분리됐다.
+- **Research contract**: 모든 조사 분야의 순차 coverage와 상태, research plan, posting snapshot, source ledger와 고정 보고서 목차가 있고 사실·해석·미확인이 분리됐다.
 - **Interview contract**: scope별 카테고리, 최소 질문 수, 질문별 8개 필드, 위험 질문, 역질문, 체크리스트가 있다.
 - **Requirement coverage**: 모든 요청 산출물과 주요 직무 요구사항을 다뤘다.
 - **Cross-document consistency**: resume, cover letter, portfolio, interview가 같은 사실과 포지셔닝을 사용한다.

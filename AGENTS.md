@@ -132,7 +132,7 @@ job_papers_optimize/
 
 1. **Gate 0 - Profile And Order**: 활성 주문, 프로필 버전, 출력 경로가 확정됐다.
 2. **Gate 1 - Source Lock**: 모든 `tailor` 산출물의 `source_id`가 실제 원본에 연결됐고 `material-inventory.md`, `source-structure.md`가 완성됐다.
-3. **Gate 2 - Research**: `research-plan.md`, 채용공고 보존본, source ledger, 고정 목차의 `company-job-analysis.md`가 완성됐다.
+3. **Gate 2 - Research**: 모든 조사 분야를 순서대로 최소 한 번 확인해 coverage status를 기록했고, `research-plan.md`, 채용공고 보존본, source ledger, 고정 목차의 `company-job-analysis.md`가 완성됐다.
 4. **Gate 3 - Matching Strategy**: 역량 정리, 요구사항-근거 매트릭스, 매칭 전략이 서로 일치한다.
 5. **Gate 4 - Application Drafts**: 문서별 분석·계획, 최종 초안, 블록 단위 변경 이력과 구조 비교가 완성됐다.
 6. **Gate 5 - Interview**: 요청 범위의 고정 포맷, 질문 수, 답변 근거, 꼬리질문, 역질문과 체크리스트가 충족됐다.

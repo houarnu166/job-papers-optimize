@@ -53,6 +53,7 @@ Findings가 없더라도 `명시적 findings 없음`과 남은 검수 한계를 
 ### Company Research
 
 - research plan 1~6 항목
+- source coverage 8개 분야의 순서, 확인 범위와 상태
 - posting snapshot
 - source ledger 필수 열과 source ID
 - final report 1~9장

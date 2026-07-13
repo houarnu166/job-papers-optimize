@@ -20,6 +20,8 @@ description: Perform a staged, source-backed analysis of a target company, produ
 
 ## Staged Workflow
 
+아래 1~8단계를 순서대로 한 번씩 확인한다. `standard`와 `deep` 모두 같은 분야를 빠짐없이 방문하며, 깊이 차이는 조사 분야의 생략이 아니라 출처 범위와 교차 확인 수준의 차이다. 각 단계 결과를 `research-plan.md`에 `found`, `not-found`, `not-applicable`, `blocked` 중 하나로 기록한 뒤 다음 단계로 이동한다.
+
 1. **Target lock**: 동명 회사, 제품, 법인, 국가, 직무, 채용 단계와 공고 원문을 확정한다. 공고는 `research/job-posting.md`에 보존한다.
 2. **Research plan**: 보고서의 필수 섹션별 질문, 우선 출처, 검색 범위, 완료 기준을 `research/research-plan.md`에 작성한다.
 3. **Company and product**: 기업 개요, 사업 모델, 고객, 주요 제품, 수익 또는 운영 구조, 최근 변화를 조사한다.
@@ -29,7 +31,7 @@ description: Perform a staged, source-backed analysis of a target company, produ
 7. **Candidate strategy**: 요구사항과 승인된 근거를 연결해 기회, 간격, 위험, 검증 질문과 지원 전략을 도출한다.
 8. **Report gate**: `references/report-contract.md`의 모든 섹션, 표와 source ID를 확인한 뒤 Gate 2를 통과시킨다.
 
-단계를 건너뛰었다면 `research-plan.md`와 보고서에 이유를 남긴다. 자료가 없다는 이유로 고정 섹션 자체를 삭제하지 않는다.
+단계를 건너뛰지 않는다. 대상 회사나 직무에 해당하지 않는 분야도 조사 여부를 검토한 뒤 `not-applicable`과 이유를 남긴다. 자료가 없으면 확인한 출처와 검색 범위를 기록하고 `not-found`로 끝내며, 고정 섹션 자체를 삭제하거나 정보를 만들지 않는다. 접근 제한이나 웹 조사 불가처럼 확인 시도 자체가 막혔을 때만 `blocked`를 사용한다.
 
 ## Sources And Evidence
 
@@ -46,6 +48,7 @@ description: Perform a staged, source-backed analysis of a target company, produ
 ## Gate 2 Completion
 
 - `research-plan.md`, `job-posting.md`, `company-job-analysis.md`, `source-ledger.md`가 존재한다.
+- 회사·제품, 직무, 조직·문화, 제품·디자인 환경, 시장·경쟁, 최근 동향의 coverage status가 모두 기록됐다.
 - 보고서의 필수 목차와 요구사항 매트릭스가 완성됐다.
 - 주요 회사·직무 주장에 source ID가 있다.
 - 사실, 해석, 미확인이 분리됐다.
