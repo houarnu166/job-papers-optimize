@@ -7,13 +7,15 @@
 `intake/preflight.md` 목차:
 
 1. Active Order
-   - order path, order ID, status, mode
-   - target company, product, role, stage, deadline
+   - order path, order ID, status, posting ID
+   - triage decision and target variant
+   - target company, product, role, stage, deadline, target submission date
    - output slug and collision check
-2. Profile
+2. Profile And Package
    - profile path, profile ID, requested version, actual version
    - updated_at, hash or hash limitation
    - evidence ledger and source map status
+   - master version, master files used, readiness status
 3. Requested Deliverables
    - type, operation, source ID, format, preservation
 4. Runtime Capabilities
@@ -35,26 +37,28 @@ Preflight는 `source-locked`를 실제 검증하기 전 보존 성공을 선언�
 
 `worklog.md` 상단에는 다음을 둔다.
 
-- Order ID and order path
-- Target and mode
+- Order ID, order path and posting ID
+- Target, triage decision and variant
 - Profile ID, version, updated_at and hash status
+- Master version and readiness status
 - Research depth
 - Requested formats and preservation
 - Started at and last updated at
 - Current overall status
 
-## Gate Table
+## Checkpoint Table
 
 ```markdown
 | Phase | Status | Required artifacts | Gate result | Notes |
 |---|---|---|---|---|
-| Gate 0 - Profile And Order | in-progress | active order, preflight | pending | |
-| Gate 1 - Source Lock | pending | material inventory, source structure | pending | |
-| Gate 2 - Research | pending | research plan, posting, report, source ledger | pending | |
-| Gate 3 - Matching Strategy | pending | capability, requirement matrix, company-signal matrix, strategy | pending | |
-| Gate 4 - Application Drafts | pending | document plans, drafts, change log, package | pending | |
-| Gate 5 - Interview | pending | interview plan, interview prep | pending | |
-| Gate 6 - Independent Review | pending | quality review | pending | |
+| L4 - Go/No-Go | passed | posting capture, triage decision | passed | |
+| L5.1 - Source Lock | in-progress | material inventory, source structure | pending | |
+| L5.2 - Research | pending | research plan, posting, report, source ledger | pending | |
+| L5.3 - Matching Strategy | pending | capability, requirement matrix, company-signal matrix, strategy | pending | |
+| L5.4 - Application Drafts | pending | document plans, drafts, change log, package | pending | |
+| L5.5 - Independent Review | pending | quality review | pending | |
+| L6 - Assignment And Interview | pending | assignment brief, interview plan, interview prep, debrief | pending | |
+| L7 - Retro | pending | application log update, retrospective | pending | |
 ```
 
 허용 상태: `pending`, `in-progress`, `passed`, `needs-user`, `blocked`.
@@ -66,7 +70,7 @@ Preflight는 `source-locked`를 실제 검증하기 전 보존 성공을 선언�
 
 ## Execution Log
 
-Gate table 아래에 append-only 실행 로그를 둔다.
+Checkpoint table 아래에 append-only 실행 로그를 둔다.
 
 | Time | Phase | Action | Inputs | Outputs | Decision or limitation |
 |---|---|---|---|---|---|
@@ -74,6 +78,8 @@ Gate table 아래에 append-only 실행 로그를 둔다.
 중요한 기본값, 사용자 승인, 구조 변경 승인, 조사 한계, remediation을 기록한다. 내부 사고 과정을 장황하게 기록하지 않고 재개와 검수에 필요한 결정만 남긴다.
 
 ## Job Posting Snapshot
+
+공고 원문 보존본은 4단계에서 만든 `pipeline/postings/{posting_id}.md`다. `research/job-posting.md`는 그 보존본을 이번 주문의 작업본으로 옮긴 것이며, 원문이 갱신되면 두 파일을 함께 맞춘다.
 
 `research/job-posting.md` 형식:
 

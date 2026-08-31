@@ -1,6 +1,6 @@
 ---
 name: interview-prep
-description: Build fixed-format practical, executive, culture-fit, portfolio-review, and reverse-question interview materials from the approved profile, company research, and exact submitted documents. Use for expected questions, evidence-backed STAR or CAR answers, weak-point handling, presentation preparation, mock interviews, and session feedback.
+description: Build fixed-format practical, executive, culture-fit, portfolio-review, and reverse-question interview materials from the approved profile, prepared interview assets, company research, and exact submitted documents, then run the immediate post-interview debrief and the reference-check preparation. Use for expected questions, evidence-backed STAR or CAR answers, weak-point handling, presentation preparation, mock interviews, session feedback, interview debriefs, and reference requests.
 ---
 
 # Interview Prep
@@ -11,12 +11,13 @@ description: Build fixed-format practical, executive, culture-fit, portfolio-rev
 
 ## Inputs
 
-- 활성 주문, 승인된 프로필 버전, evidence ledger, story bank
+- 활성 주문, 승인된 프로필 버전, evidence ledger
+- `package/interview-assets.md`와 `package/experience-assets/`의 준비된 경험 자산
 - 고정 포맷의 company research와 requirement-evidence matrix
 - 실제 제출했거나 이번 주문에서 승인된 이력서·자기소개서·포트폴리오
 - `interview.scope`, 답변 시간, 알려진 면접 단계와 면접관 정보
 
-원본 경력 전체를 다시 intake하지 않는다. 다만 면접 답변은 프로필만이 아니라 면접관이 실제 보게 될 제출 문서와 일치해야 한다. 인터뷰 전용 주문에 제출 문서가 없으면 그 제한을 기록하고 사용자에게 필요한 문서만 요청한다.
+준비된 경험 자산을 기본 재료로 사용한다. 자산이 없으면 3단계 `ready-package`로 돌아간다. 원본 경력 전체를 다시 intake하지 않는다. 다만 면접 답변은 프로필만이 아니라 면접관이 실제 보게 될 제출 문서와 일치해야 한다. 인터뷰 전용 주문에 제출 문서가 없으면 그 제한을 기록하고 사용자에게 필요한 문서만 요청한다.
 
 ## Staged Workflow
 
@@ -27,7 +28,7 @@ description: Build fixed-format practical, executive, culture-fit, portfolio-rev
 5. **Portfolio or work-sample deep dive**: 주요 프로젝트 또는 경력 사례마다 결정, 기여, 근거, 트레이드오프, 실패·회고를 묻는 질문을 준비한다.
 6. **Common and risk questions**: 지원 동기, 이직·퇴사, 공백, 강약점, 실패, 갈등, 미경험 요건 등 실제 위험 항목을 다룬다.
 7. **Reverse questions and checklist**: 회사 조사에 근거한 역질문, 질문 의도, 피해야 할 질문, 마지막 연습 체크리스트를 작성한다.
-8. **Format gate**: `report-contract.md`를 대조하고 Gate 5를 통과시킨다.
+8. **Format gate**: `report-contract.md`를 대조하고 L6.2를 통과시킨다.
 
 주문 scope가 `practical`, `executive`, `portfolio`, `compact`로 좁혀진 경우 해당 범위만 만들 수 있다. `full`에서는 고정 섹션을 생략하지 않는다. 분량을 줄여달라는 요청은 답변 길이를 줄이는 것이며 질문별 필드를 삭제하는 것이 아니다.
 
@@ -59,10 +60,35 @@ description: Build fixed-format practical, executive, culture-fit, portfolio-rev
 
 사용자가 요청하면 질문을 한 번에 하나씩 묻고 실제 답변을 기록한 뒤 근거, 명확성, 구조, 전달력을 피드백한다. `session-{date}.md`에 질문, 사용자 답변, 피드백과 재연습 문장을 남긴다. 사용자의 실제 답변을 허구의 완성 답변으로 조용히 바꾸지 않는다.
 
-## Gate 5 Completion
+## Debrief
+
+면접 직후 기억이 남아 있을 때 `interview/debrief-{date}.md`를 작성한다.
+
+1. 면접 단계, 면접관 구성, 소요 시간
+2. 실제 나온 질문을 들은 대로 기록
+3. 내가 한 답변의 요지와 사용한 경험 자산
+4. 막힌 지점과 그 이유
+5. 면접관의 반응과 되물음
+6. 다음 단계까지 보완할 내용
+7. 마스터 자산으로 승격하거나 보완할 후보
+
+복기는 해석보다 사실을 먼저 적는다. 결과 통보 후에는 이 기록을 `pipeline-retro`로 넘긴다.
+
+## Reference Check
+
+- 채용사의 추천인 수, 관계 요건, 현 직장 포함 여부와 절차를 먼저 확인한다.
+- 실제 업무와 성과를 아는 후보에게 사전에 동의를 구한다. 동의 없이 이름을 제출하지 않는다.
+- 함께한 프로젝트, 본인 역할, 확인 가능한 결과, 일하는 방식을 사실대로 정리해 공유한다.
+- 퇴사 과정의 갈등과 업무 수행 평가를 구분한다. 허용되지 않은 대체 추천인을 임의로 지정하지 않는다.
+- 요청·완료 일시와 후속 연락을 `interview/reference-log.md`와 `pipeline/application-log.md`에 기록한다.
+- 이 스킬은 레퍼런스에게 보낼 메시지를 대신 발송하지 않는다. 초안까지 만들고 발송은 사용자가 한다.
+
+## L6 Completion
 
 - `interview-plan.md`와 `interview-prep.md`가 존재한다.
 - 주문 scope의 필수 카테고리와 최소 질문 수를 충족한다.
 - 모든 질문이 question contract를 충족한다.
 - 주요 답변은 제출 문서 및 verified evidence와 일치한다.
 - 위험 질문, 포트폴리오 검증 질문, 역질문과 최종 체크리스트가 포함됐다.
+- 면접을 실제로 봤다면 즉시 복기 기록이 있다.
+- 레퍼런스가 진행됐다면 동의 여부와 진행 기록이 있다.

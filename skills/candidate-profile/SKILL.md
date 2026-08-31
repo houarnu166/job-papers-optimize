@@ -9,16 +9,13 @@ description: Initialize or update the persistent single-candidate career profile
 
 ## Required Files
 
-- Raw sources: `inputs/private/sources/`
-- Profile template: `inputs/profile/candidate-profile.template.md`
-- Evidence template: `inputs/profile/evidence-ledger.template.md`
-- Source map template: `inputs/profile/source-map.template.md`
+- Raw sources: `inputs/private/sources/`, `inputs/주로제출하던이력서와포트폴리오/`
 - Schema: `references/profile-schema.md`
 - Approved profile: `inputs/profile/candidate-profile.md`
 - Approved evidence: `inputs/profile/evidence-ledger.md`
 - Approved source map: `inputs/profile/source-map.md`
 
-PDF를 읽을 때는 `skills/pdf/SKILL.md`, DOCX를 읽을 때는 `skills/docx/SKILL.md`를 함께 사용한다.
+PDF를 읽을 때는 `skills/pdf/SKILL.md`, DOCX를 읽을 때는 `skills/document-export/SKILL.md`를 함께 사용한다. 파일에서 확인할 수 없는 사실은 `skills/experience-interview/SKILL.md`로 확보한 뒤 이 스킬의 Update 모드로 반영한다.
 
 ## Modes
 
@@ -29,7 +26,7 @@ PDF를 읽을 때는 `skills/pdf/SKILL.md`, DOCX를 읽을 때는 `skills/docx/S
 1. 원본을 읽고 경력, 프로젝트, 역할, 기간, 성과, 도구, 커리어 방향과 인터뷰 스토리를 추출한다.
 2. 사실마다 안정적인 `EV-####` 근거 ID와 원본 locator를 부여한다.
 3. 상충하거나 불확실한 정보는 최종 프로필에 단정하지 않고 `conflict` 또는 `candidate`로 기록한다.
-4. `outputs/_profile-updates/{update_id}/`에 `update-proposal.md`, `evidence-diff.md`, `staged-profile.md`, `evidence-ledger.md`, `source-map.md`와 신규 자산을 작성한다.
+4. `package/profile-updates/{update_id}/`에 `update-proposal.md`, `evidence-diff.md`, `staged-profile.md`, `evidence-ledger.md`, `source-map.md`와 신규 자산을 작성한다.
 5. 사용자에게 변경안 승인을 요청한다. 승인 전 `inputs/profile/`을 수정하지 않는다.
 
 ### Update
@@ -60,8 +57,9 @@ PDF를 읽을 때는 `skills/pdf/SKILL.md`, DOCX를 읽을 때는 `skills/docx/S
 ## Evidence Rules
 
 - 검증 가능한 사실만 `verified`로 둔다.
+- 인터뷰로 확보한 사실은 출처 `interview`, 신뢰도 `self-reported`로 등재한다. 확인 가능한 원본이 생기면 상태를 올리고 locator를 채운다.
 - PDF locator는 페이지, DOCX/MD/HTML은 제목·문단, JSON은 JSON path를 사용한다.
-- 정량 수치는 원본에 정확히 있을 때만 프로필에 넣는다.
+- 정량 수치는 원본에 정확히 있거나 사용자가 계산 근거와 함께 확정했을 때만 프로필에 넣는다. 불확실하면 범위와 `estimated`를 함께 기록한다.
 - 추정, 해석, 회사별 포지셔닝은 영구 프로필 사실로 저장하지 않는다.
 - 연락처와 민감정보는 지원에 필요한 최소 범위만 유지한다.
 

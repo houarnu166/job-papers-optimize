@@ -29,7 +29,7 @@ description: Perform a staged, source-backed analysis of a target company, produ
 5. **Organization and work context**: 공식 근거가 있을 때 문화, 가치, 제품·디자인 조직, 프로세스와 도구를 조사한다. 찾지 못한 정보는 확인되지 않았다고 쓴다.
 6. **Market and recent context**: 표준 조사는 직무 판단에 필요한 시장·경쟁·최근 변화만, 심화 조사는 경쟁 구도·재무/투자·후기 신호까지 확장한다.
 7. **Candidate strategy**: 요구사항과 승인된 근거를 연결해 기회, 간격, 위험, 검증 질문과 지원 전략을 도출한다.
-8. **Report gate**: `references/report-contract.md`의 모든 섹션, 표와 source ID를 확인한 뒤 Gate 2를 통과시킨다.
+8. **Report gate**: `references/report-contract.md`의 모든 섹션, 표와 source ID를 확인한 뒤 L5.2를 통과시킨다.
 
 단계를 건너뛰지 않는다. 대상 회사나 직무에 해당하지 않는 분야도 조사 여부를 검토한 뒤 `not-applicable`과 이유를 남긴다. 자료가 없으면 확인한 출처와 검색 범위를 기록하고 `not-found`로 끝내며, 고정 섹션 자체를 삭제하거나 정보를 만들지 않는다. 접근 제한이나 웹 조사 불가처럼 확인 시도 자체가 막혔을 때만 `blocked`를 사용한다.
 
@@ -45,7 +45,7 @@ description: Perform a staged, source-backed analysis of a target company, produ
 
 웹 조사 기능이 없으면 설치나 설정을 요구하지 않는다. 제공된 공고와 회사 자료만 사용하고 조사 범위 제한을 기록한다. 핵심 판단에 꼭 필요한 경우에만 공식 페이지 내용이나 링크 제공을 요청한다.
 
-## Gate 2 Completion
+## L5.2 Completion
 
 - `research-plan.md`, `job-posting.md`, `company-job-analysis.md`, `source-ledger.md`가 존재한다.
 - 회사·제품, 직무, 조직·문화, 제품·디자인 환경, 시장·경쟁, 최근 동향의 coverage status가 모두 기록됐다.

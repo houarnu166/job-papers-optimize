@@ -11,13 +11,19 @@ description: Independently review company-specific research, application, interv
 
 ## Inputs
 
-- 활성 주문, `worklog.md`, `source-ledger.md`
+- 활성 주문 `outputs/{output_slug}/order.md`, `worklog.md`, `source-ledger.md`
 - 승인된 profile과 evidence ledger
+- `package/master/`의 사용한 마스터와 `package/master/source-structure.md`
 - `intake/material-inventory.md`와 `tailor` 작업이 있을 때 `source-structure.md`
-- 모든 research, application, interview, export 산출물
+- 모든 research, application, assignment, interview, export 산출물
 - 실제 primary source 문서와 최종 결과물
 
 검수 결과는 `outputs/{output_slug}/review/quality-review.md`에만 작성한다. 수정은 해당 소유 스킬로 돌려보낸다.
+
+## Review Targets
+
+- **10% 산출물 검수(L5.5)**: 회사별 제출본을 마스터 및 원본과 비교한다. 기본 모드다.
+- **90% 패키지 검수(L3)**: 마스터를 제출 원본과 비교한다. 이때 결과는 `package/readiness.md`의 검수 섹션에 기록하고, 회사 신호 관련 항목은 `not-applicable`로 둔다. 대신 목표 직무축의 반복 요건 대응, 경험 카드 연결, 압축 규칙 준수, 스토리보드 판정의 근거를 확인한다.
 
 ## Independent Review Sequence
 
@@ -41,6 +47,8 @@ description: Independently review company-specific research, application, interv
 - **Unauthorized changes**: 삭제, 추가, 병합, 분할, 최상위 섹션 재배치와 부모 간 이동이 change log의 이유와 승인 상태 없이 적용되지 않았다.
 - **Research contract**: 모든 조사 분야의 순차 coverage와 상태, research plan, posting snapshot, source ledger와 고정 보고서 목차가 있고 사실·해석·미확인이 분리됐다.
 - **Interview contract**: scope별 카테고리, 최소 질문 수, 질문별 8개 필드, 위험 질문, 역질문, 체크리스트가 있다.
+- **Assignment contract**: 사전과제가 있으면 결론 우선 배치, 주어진 사실·외부 조사·개인 가정의 구분, 대안 비교, 지표와 리스크, 제출 조건 준수를 확인한다.
+- **Package linkage**: 5단계 산출물이 사용한 마스터 버전과 변형이 주문·worklog에 기록됐고, 마스터에 없는 사실이 새로 등장하지 않았다.
 - **Requirement coverage**: 모든 요청 산출물과 주요 직무 요구사항을 다뤘고, 확인 가능한 인재상·문화·업무 방식·제품 맥락을 지원자 강점에 매핑했다.
 - **Cross-document consistency**: resume, cover letter, portfolio, interview가 같은 사실과 포지셔닝을 사용한다.
 - **Submission cleanliness**: 최종 제출 문서에 `EV-`, `SRC-`, TODO, `확인 필요`, 내부 지시, source-page 표식이 없다.

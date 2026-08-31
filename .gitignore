@@ -15,8 +15,33 @@ inputs/profile/assets/*
 inputs/profile/history/*
 !inputs/profile/history/.gitkeep
 
+inputs/주로제출하던이력서와포트폴리오/
+inputs/IT 대기업 상향 이직 웨비나/
+
+package/*
+!package/experience-assets/
+!package/jd-scorecards/
+!package/master/
+!package/profile-updates/
+package/experience-assets/*
+!package/experience-assets/.gitkeep
+package/jd-scorecards/*
+!package/jd-scorecards/.gitkeep
+package/master/*
+!package/master/.gitkeep
+package/profile-updates/*
+!package/profile-updates/.gitkeep
+
+pipeline/*
+!pipeline/postings/
+!pipeline/triage/
+!pipeline/retrospectives/
+pipeline/postings/*
+!pipeline/postings/.gitkeep
+pipeline/triage/*
+!pipeline/triage/.gitkeep
+pipeline/retrospectives/*
+!pipeline/retrospectives/.gitkeep
+
 outputs/*
 !outputs/.gitkeep
-!outputs/_profile-updates/
-outputs/_profile-updates/*
-!outputs/_profile-updates/.gitkeep

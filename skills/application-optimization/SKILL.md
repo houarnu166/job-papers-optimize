@@ -15,17 +15,26 @@ description: Tailor resumes, cover letters, portfolios, and application strategy
 ## Inputs
 
 - 활성 주문, 승인된 candidate profile, evidence ledger
+- `package/master/`의 해당 마스터와 `package/master/source-structure.md`
+- `package/variants.md`, `package/jd-scorecards/`, `package/experience-assets/`
 - `intake/material-inventory.md`, `intake/source-structure.md`
 - `research/company-job-analysis.md`와 `source-ledger.md`
 - 주문에 연결된 primary source와 supplemental 자료
 
 프로필은 사실 근거로, primary source는 문서의 형식·목소리·구조 권위로 사용한다. 일반 회사 주문에서 모든 원시 경력 자료를 다시 intake하지 않는다.
 
+## Stage Context
+
+- 3단계(`ready-package`)에서 호출되면 제출 원본이 source이고 결과물은 `package/master/`의 마스터다. 목표는 특정 회사가 아니라 목표 직무축이다.
+- 5단계에서 호출되면 마스터가 source이고 결과물은 `outputs/{output_slug}/application/`의 제출본이다. 목표는 이 회사가 검증하려는 문제다.
+- 5단계에서 바꾸는 범위는 상단 메시지, 지원 동기, 대표 경험의 선택과 순서, 직무 언어, 강조점이다. 사실, 형식 골격, 검증된 수치는 바꾸지 않는다.
+- 마스터에 없는 사실이 필요하면 만들지 말고 2단계로 되돌린다.
+
 ## Source Gate
 
 - `operation: tailor`인 각 deliverable은 읽을 수 있는 `source_id`와 연결되어야 한다.
 - `source-structure.md`에는 해당 source의 모든 최상위 섹션과 주요 블록, 표, 목록, 이미지, 캡션, 순서가 있어야 한다.
-- 둘 중 하나라도 없으면 Gate 1은 실패다. 프로필로 새 문서를 작성해 빈자리를 메우지 않는다.
+- 둘 중 하나라도 없으면 L5.1은 실패다. 프로필로 새 문서를 작성해 빈자리를 메우지 않는다.
 - `operation: create`는 사용자가 새 문서 작성을 명시한 경우에만 사용하며, 이때도 `artifact-contract.md`의 분석·근거 절차는 유지한다.
 
 ## Truth And Identity
@@ -50,7 +59,7 @@ description: Tailor resumes, cover letters, portfolios, and application strategy
 8. **Structural diff**: source block과 output block을 대조하고 모든 실질적 변경을 `change-log.md`에 기록한다. 전략적으로 재배치한 단위와 승인 필요한 구조 변경을 구분한다.
 9. **Submission package**: 최종 제출 파일, 선택 export, 보류 항목과 제출 전 확인사항을 `submission-package.md`에 정리한다.
 
-Gate 3이 통과하기 전 최종 문구를 확정하지 않고, Gate 4의 structural diff가 끝나기 전 문서 작성을 완료 처리하지 않는다.
+L5.3이 통과하기 전 최종 문구를 확정하지 않고, L5.4의 structural diff가 끝나기 전 문서 작성을 완료 처리하지 않는다.
 
 ## Source Preservation
 
@@ -70,7 +79,7 @@ Gate 3이 통과하기 전 최종 문구를 확정하지 않고, Gate 4의 struc
 - ATS 키워드는 자연스럽게 사용하고 실제 경험이 없는 키워드를 경력처럼 삽입하지 않는다.
 - 지원하지 않은 변경은 계획 문서에서 `사용자 확인 필요`로 남기고 최종 문구에 넣지 않는다.
 
-## Gate 4 Completion
+## L5.4 Completion
 
 - 요청 문서별 분석·계획과 최종본이 존재한다.
 - 모든 `tailor` 최종본이 source structure에 대응한다.

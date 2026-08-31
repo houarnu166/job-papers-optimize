@@ -1,8 +1,7 @@
 # Third-Party Notices
 
-Project-authored textual harness material is licensed under the terms in
-`LICENSE`.
-Third-party material remains subject to its own license terms.
+This workspace is a personal-use environment and is not redistributed.
+Third-party material included here remains subject to its own license terms.
 
 ## PDF skill guidance
 
