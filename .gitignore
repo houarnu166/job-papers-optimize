@@ -45,3 +45,5 @@ pipeline/retrospectives/*
 
 outputs/*
 !outputs/.gitkeep
+
+HANDOFF.md
